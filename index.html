@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<meta name="descripcion" content="OVI Programacion Web 1">
-	<meta name="keywords" content="HTML5, CCC3">
 	<title>Programación Web 1</title>
+	<meta name="descripcion" content="OVI Programacion Web 1">
+	<link rel="stylesheet" href="css/reset_navegadores.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -17,81 +17,60 @@
 			<h1>Programación Web 1</h1>
 		</div>
 		<div id="menuRapido">
-			<a href="index.html">Inicio</a>&nbsp;&nbsp;
-			<a href="https://www.unad.edu.co">UNAD</a>&nbsp;&nbsp;
-			<a href="https://academia.unad.edu.co/estudiantes/pregrado-posgrado/">Atención al Estudiante</a>&nbsp;&nbsp;
-			<a href="https://biblioteca.unad.edu.co">Biblioteca</a>&nbsp;&nbsp;
+			<nav id="top_menu"> 
+			  <ul>
+				<li><a href="https://academia.unad.edu.co/estudiantes/pregrado-posgrado/">Atención al Estudiante</a></li>
+				<li><a href="https://biblioteca.unad.edu.co">Biblioteca</a></li>
+				<li><a href="https://www.unad.edu.co">UNAD</a></li>
+				<li><a href="index.html">Inicio</a></li>
+			  </ul>
+			</nav>
 		</div>
 	</div>
 </header>
 <Section id="contenidos">
 	<aside id="columnaIzquierda">
-		<div id="bloqueMenu1">
-			<h2>Contenidos Temáticos</h2>
-			<nav>
-					<li><a href="#">Acerca del OVI</a></li>
-					<li><a href="#">Sobre el curso</a>
-						<ul>
-							<li><a href="#">Generalidades</a></li>
-							<li><a href="#">Objetivos</a></li>
-							<li><a href="#">Temáticas</a></li>
+		<div id="bloqueMenu">
+			<br>
+			<nav id="menu_lateral"> 
+				<ul class="item_principal">
+					<li><a href="generalidades.html">Generalidades</a></li>
+					<li><a href="conceptualizacion.html">Conceptualización</a></li>
+					<li><a href="base_datos.html">Base de datos</a>
+						<ul class="sub_item">
+							<li><a href="creacion_base_datos.html">Creación BD</a></li>
+							<li><a href="vinculacion_base_datos.html">Vinculación BD con PHP</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Primeros pasos</a></li>
-					<li><a href="#">Base de datos</a>
-						<ul>
-							<li><a href="#">Creación</a></li>
-							<li><a href="#">Vinculación con PHP</a></li>
+					<li><a href="uso_tablas.html">Uso de tablas</a>
+						<ul class="sub_item">
+							<li><a href="ingreso_registros.html">Ingresar registros</a></li>
+							<li><a href="modificar_registros.html">Editar Datos</a></li>
+							<li><a href="eliminar_registros.html">Eliminar registros</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Uso de tablas</a>
-						<ul>
-							<li><a href="#">Ingresar registros</a></li>
-							<li><a href="#">Editar Datos</a></li>
-							<li><a href="#">Eliminar registros</a></li>
-						</ul>
-			 </nav>
-		</div>
-		<!-- <hr id="linea"> -->
-		<div id="bloqueMenu2">
-			<h2>Multimedia</h2>
-			<nav>
 					<li><a href="#">Audios</a>
-						<ul>
+						<ul class="sub_item">
 							<li><a href="#">tema 1</a></li>
 							<li><a href="#">tema 2</a></li>
 						</ul>
 					</li>
-					<li><a href="#">V&iacutedeos</a>
-						<ul>
+					<li><a href="#">Videos</a>
+						<ul class="sub_item">
 							<li><a href="#">Tema 1</a></li>
 							<li><a href="#">Tema 2</a></li>
 							<li><a href="#">Tema 3</a></li>
 						</ul>
 					</li>
-			</nav>
-		</div>
-		<div id="bloqueMenu3">
-			<h2>Actividades</h2>
-			<nav>
-					<li><a href="#">Actividad 1</a>
-						<ul>
+					<li><a href="#">Actividades </a>
+						<ul class="sub_item">
 							<li><a href="#">tema 1</a></li>
 							<li><a href="#">tema 2</a></li>
 							<li><a href="#">tema 3</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Actividad 2</a>
-						<ul>
-							<li><a href="#">Tema 1</a></li>
-							<li><a href="#">Tema 2</a></li>
-						</ul>
-					</li>
-			</nav>
-		</div>
-		<div id="bloqueMenu4">
-			<nav>
 					<li><a href="#">Sobre los Autores</a>
+				</ul>
 			</nav>
 		</div>
 		<div id="redes">
@@ -99,9 +78,6 @@
 		</div>
 	</aside>
 	<aside id="columnaContenido">
-		<h3>Contenidos</h3>
-		<h4>Contenidos</h4>
-		<h5>Contenidos</h5>
 	</aside>
 </Section>
 <footer id="pie">
