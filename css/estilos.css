@@ -1,9 +1,10 @@
-*{
-	margin: 0px;
-	padding: 0px;
+body {
+	margin: 3px;
+	padding: 3px;
 }
+/*FUENTES*/
 h1{
-	font-family: verdana;
+	font: 32px verdana;
 	display: flex;
     justify-content: center;
     align-content: center;
@@ -25,7 +26,7 @@ h5{
 	font-family: Cambria;
 	font-size: 16px;
 }
-
+/*BLOQUE HEADER*/
 #cabecera, #cabeceraIzquierda, #cabeceraDerecha{
 	float: left;
 }
@@ -47,15 +48,35 @@ h5{
 	width: 100%;
 	height: 48px;
 }
-#menuRapido{
-	padding: 5px 5px;
-	text-align: right;
-}
 #tituloOvi{
 	border: 3px solid #808080;
 	padding-left: 15px;
 	background: #20B2AA;
 }
+#menuRapido{
+	padding: 5px 5px;
+	text-align: right;
+	display: inline-block;
+}
+/*BLOQUE MENU SUPERIOR*/
+#bloqueMenu{
+	border: 3px solid #808080;
+	float: left;
+	background: #20b2aa;
+	width: 100%;
+}
+#bloqueMenu{
+	height: 440px;
+}
+/*estilos menu superior*/
+#top_menu{
+	display: inline;
+}
+#top_menu li{
+	float: right;
+	padding-right: 10px;
+}
+/*BLOQUE CONTENIDOS*/
 #Contenidos{
 	text-align: center;
 	float: left;
@@ -63,79 +84,71 @@ h5{
 	height: 500px;
 }
 #columnaIzquierda, #columnaContenido{
-	height: 495px;
-	border: 3px solid #808080;
+	height: 494px;
 }
 #columnaIzquierda {
 	float: left;
 	width: 20%;
 }
 #columnaContenido {
+	border: 3px solid #808080;
 	padding-left: 15px;
 	display: inline-block;
 	background: #8fbc8f;
 	width: 77%;
 }
-#bloqueMenu1, #bloqueMenu2, #bloqueMenu3, #bloqueMenu4, #redes{
-	border: 3px solid #808080;
-	float: left;
-	background: #20b2aa;
-	width: 100%;
+/*MENU LATERAL*/
+#menu_lateral {
+  width: auto;
+  font: bold 14px Verdana;
 }
-#bloqueMenu1{
-	height: 180px;
-	padding-left: 20px;
+/* listas a cero */
+.item_principal, .sub_item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-#bloqueMenu2, #bloqueMenu3{
-	height: 100px;
-	padding-left: 20px;
+/* relleno y color de fondo */
+.item_principal a {
+  display: block;
+  background-color: #20b2aa;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
 }
-#bloqueMenu4{
-	height: 35px;
-	padding-left: 20px;
-	display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+/* desplazamiento */
+.item_principal a:hover {
+    background-color: #C5C5C5;
 }
-#bloqueMenu2, #bloqueMenu3, #bloqueMenu4, #redes{
+/* efecto cuando se pase el cursor y altura maxima*/
+.item_principal li:hover .sub_item {
+  display: block;
+  max-height: 200px;
+}
+/*fondo para sub_items*/
+.sub_item a {
+  background-color: #999;
+}
+/* hover para sub_item */
+.sub_item a:hover {
+  background-color: #666;
+}
+/* estilo sub_item ocultando contenido que desborde*/
+.sub_item {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+/*BLOQUE REDES SOCIALES*/
+#redes{
 	margin-top: 3px;
 }
 #redes{
-	height: 40px;
-}
-nav{
-   width:300px;
-   margin: 5% auto;
-   font: bold 14px verdana;
-}
-nav li{
-   list-style: none;
-   position:relative; 
-}
-nav li a{
-   text-decoration:none;
-   padding: 5px;
-   display:block;
-}
-nav li.parent:hover{
-   margin:-1px;
-}
-nav li li a{
-   width:200px;
-   display:block;
-}
-
-nav li ul {
-   width: 300px;
-   margin:0;
-   display:none;
-   position: absolute;
-   left: 60%;
-   top:-1px;
-}
-nav li:hover ul {
-   display: block;
+	border: 3px solid #808080;
+	float: left;
+	height: 45px;
+	width: 100%;
+	background: gray;
 }
 #pie{
 	margin-top: 3px;
@@ -148,7 +161,7 @@ nav li:hover ul {
 	float: left;
 	border: 3px solid #808080;	
 	height: 30px;
-	width: 88%;
+	width: 87.7%;
 }
 #contadorVisitas{
 	float: left;
@@ -156,3 +169,4 @@ nav li:hover ul {
 	height: 30px;
 	width: 10%;
 }
+
