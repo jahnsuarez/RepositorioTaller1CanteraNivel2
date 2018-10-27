@@ -2,13 +2,59 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>lectura1</title>
+	<title>lectura5</title>
 </head>
 <body>
 
+<center>
+	<h1>VINCULACIÓN DE BASES DE DATOS CON PHP</h1>
 
-	<h1>BASES DE DATOS</h1>
+<img src="objetos/img5.jpg" width="800"  height="600" alt="programation"> 
+<br>
+<span>Foto de Fabian Grohs en Unsplash.</span>
+<br>
+</center>
 
+	<p align="justify">Para poder realizar una correcta vinculación de una base de datos con PHP, necesitamos como primera medida tener una base de datos ya creada con anterioridad, la cual va a a tener almacenada la información que necesitamos para la vinculación, además vamos a necesitar el host o url de nuestro servidor de base de datos, un nombre de usuario con permisos en la base de datos y la contraseña del mismo, debemos dar inicio por medio de los siguientes pasos:
+	<br>
+	<br>
+	<p align="justify">1. Creamos las variables que contendrán los datos que acabo de mencionar. Ejemplo: Utilizaremos unas variables de cualquier dato que nos permita entender la estructura que debe cumplir.
+
+	<p align="justify">$usuario = "lramirez_a";
+	<p align="justify">$contrasena = "contraseña";  
+	<p align="justify">$servidor = "localhost";
+	<p align="justify">$basededatos = "cuentas";
+	<br>
+	<br>
+	<p align="justify">2. Crear la conexión con el servidor de base de datos con mysqli_connect()
+	<p align="justify">Mediante la función mysqli_connect() y los datos o variables que hemos creado, para ello crearemos una variable $conexion que contendrá la conexión.
+	<br>
+	<br>
+	<p align="justify">Ejemplo:
+	<p align="justify">$conexion = mysqli_connect( $servidor, $usuario, "" );
+
+	<p align="justify">Teniendo en cuenta que no podemos estar seguro de que la conexión con el servidor de la base de datos sea correcta, vamos a añadir un código para que nos muestre un mensaje en el caso de que la conexión con la base de datos no se haya podido realizar. 
+	<br>
+	<br>
+	<p align="justify">Ejemplo:
+	<p align="justify">$conexion = mysqli_connect( $servidor, $usuario, "" ) or die ("No se ha podido conectar al servidor de Base de datos");
+		<br>
+		<br>
+	<p align="justify">3. Conexión a la base de datos
+ 	<p align="justify">Como ya tenemos conectado con el servidor de Base de Datos, ahora lo que debemos hacer es seleccionar la base de datos que vamos a utilizar, usaremos la función mysqli_select_db() a la que le indicaremos 2 parámetros:el objeto de conexión a la base de datos que hemos creado hace un momento ($conexion) y el nombre de la base de datos ($basededatos):
+ 	<br>
+	<br>
+	<p align="justify">Ejemplo:
+	<p align="justify">$db = mysqli_select_db( $conexion, $basededatos );
+	<p align="justify">Al igual que el ejemplo anterior; podemos hacer que de no cumplirse la condición, se envíe un mensaje del error que se está ocasionando para que el usuario comprenda que la información es incorrecta, dicho mensaje podra programarse de la siguiente manera:
+	<p align="justify">$db = mysqli_select_db( $conexion, $basededatos ) or die ( "No se ha podido conectar a la base de datos" );
+	<br>
+	<br>
+
+	<p align="justify">REFERENCIA BIBLIOGRÁFICA
+	<p align="justify">http://www.oscarabadfolgueira.com/conectar-una-base-datos-mysql-desde-php/
+
+	</p>
 
 <ul>
 	<li><a href="index.hatml">INICIO<a></li>
