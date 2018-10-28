@@ -9,40 +9,51 @@ h1{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    color: white;
 }
 h2{
 	font-family: verdana, sans-serif;
 	font-size: 16px;
+    color: white;
 }
 h3{
 	font-family: Cambria;
 	font-size: 20px;
+    color: white;
 }
 h4{
 	font-family: Cambria;
 	font-size: 18px;
+    color: white;
+}
+p{
+    color: white;
+    padding-bottom: 7px;
+    font-size : 24;
+    text-align: justify;
 }
 h5{
 	font-family: Cambria;
 	font-size: 16px;
+    color: white;
 }
 /*BLOQUE HEADER*/
 #cabecera, #cabeceraIzquierda, #cabeceraDerecha{
 	float: left;
 }
 #cabecera{
-	height: 80px;
+	height: 150px;
 	width: 100%;
 	margin-bottom: 5px;
 }
 #cabeceraDerecha, #cabeceraIzquierda{
-	height: 99px;
+	height: 150px;
 }
 #cabeceraIzquierda{
-	width: 28%;
+	width: 55%;
 }
 #cabeceraDerecha{
-	width: 69%;
+	width: 40%;
 }
 #menuRapido, #tituloOvi{
 	width: 100%;
@@ -51,7 +62,7 @@ h5{
 #tituloOvi{
 	border: 3px solid #808080;
 	padding-left: 15px;
-	background: #20B2AA;
+	background: #B3B3B3;
 }
 #menuRapido{
 	padding: 5px 5px;
@@ -62,7 +73,7 @@ h5{
 #bloqueMenu{
 	border: 3px solid #808080;
 	float: left;
-	background: #20b2aa;
+	background: #B3B3B3;
 	width: 100%;
 }
 #bloqueMenu{
@@ -92,9 +103,12 @@ h5{
 }
 #columnaContenido {
 	border: 3px solid #808080;
-	padding-left: 15px;
-	display: inline-block;
-	background: #8fbc8f;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: auto;
+    
+/*	display: inline-block; */
+	background: #005883;
 	width: 77%;
 }
 /*MENU LATERAL*/
@@ -111,19 +125,19 @@ h5{
 /* relleno y color de fondo */
 .item_principal a {
   display: block;
-  background-color: #20b2aa;
+  background-color: #B3B3B3;
   text-decoration: none;
   padding: 10px;
   color: #000;
 }
 /* desplazamiento */
 .item_principal a:hover {
-    background-color: #C5C5C5;
+    background-color: #B3B3B3;
 }
 /* efecto cuando se pase el cursor y altura maxima*/
 .item_principal li:hover .sub_item {
   display: block;
-  max-height: 200px;
+  max-height: 300px;
 }
 /*fondo para sub_items*/
 .sub_item a {
